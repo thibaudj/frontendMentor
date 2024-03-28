@@ -16,7 +16,6 @@ body {
   height: 100vh;
   background-color: #f4d04e;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 24px;
@@ -30,22 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 327px;
+  width: 100%;
   box-shadow: 8px 8px black;
-}
-
-@media screen and (min-width: 321px) {
-  .card {
-    max-width: 384px;
-  }
-}
-
-.card:hover {
-  box-shadow: 16px 16px black;
-  cursor: pointer;
-  .card__title {
-    color: #f4d04e;
-  }
 }
 
 .card__picture {
@@ -59,34 +44,34 @@ body {
   gap: 12px;
 }
 
-.chip {
+.card__content-chip {
   background-color: #f4d04e;
   padding: 4px 12px;
   width: fit-content;
   border-radius: 4px;
   font-family: "Figtree";
   font-weight: 800;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
 }
 
-.publish-date {
+.card__content-date {
   font-family: "Figtree";
-  font-size: 14px;
+  font-size: 12px;
   line-height: 21px;
   font-weight: 500;
 }
 
-.card__title {
+.card__content-title {
   font-family: "Figtree";
-  font-size: 24px;
+  font-size: 20px;
   line-height: 21px;
   font-weight: 800;
 }
 
-.card__description {
+.card__content-description {
   font-family: "Figtree";
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   color: #7f7f7f;
 }
@@ -97,14 +82,44 @@ body {
   align-items: center;
 }
 
-.card__avatar {
+.card__footer-avatar {
   height: 32px;
   width: 32px;
 }
 
-.card__avatar-name {
+.card__footer-avatar-name {
   font-family: "Figtree";
   font-size: 14px;
   line-height: 21px;
   font-weight: 800;
+}
+
+@media (width > 375px) {
+  .card {
+    max-width: 384px;
+  }
+
+  .card:hover {
+    box-shadow: 16px 16px black;
+    cursor: pointer;
+    .card__content-title {
+      color: #f4d04e;
+    }
+  }
+
+  .card__content-chip {
+    font-size: 14px;
+  }
+
+  .card__content-date {
+    font-size: 14px;
+  }
+
+  .card__content-title {
+    font-size: 24px;
+  }
+
+  .card__content-description {
+    font-size: 16px;
+  }
 }
