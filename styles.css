@@ -44,7 +44,7 @@ body {
   gap: 12px;
 }
 
-.card__content-chip {
+.card__content--chip {
   background-color: #f4d04e;
   padding: 4px 12px;
   width: fit-content;
@@ -55,21 +55,21 @@ body {
   line-height: 21px;
 }
 
-.card__content-date {
+.card__content--date {
   font-family: "Figtree";
   font-size: 12px;
   line-height: 21px;
   font-weight: 500;
 }
 
-.card__content-title {
+.card__content--title {
   font-family: "Figtree";
   font-size: 20px;
   line-height: 21px;
   font-weight: 800;
 }
 
-.card__content-description {
+.card__content--description {
   font-family: "Figtree";
   font-size: 14px;
   line-height: 24px;
@@ -82,12 +82,12 @@ body {
   align-items: center;
 }
 
-.card__footer-avatar {
+.card__footer--avatar {
   height: 32px;
   width: 32px;
 }
 
-.card__footer-avatar-name {
+.card__footer--avatar-name {
   font-family: "Figtree";
   font-size: 14px;
   line-height: 21px;
@@ -102,24 +102,24 @@ body {
   .card:hover {
     box-shadow: 16px 16px black;
     cursor: pointer;
-    .card__content-title {
+    .card__content--title {
       color: #f4d04e;
     }
   }
 
-  .card__content-chip {
+  .card__content--chip {
     font-size: 14px;
   }
 
-  .card__content-date {
+  .card__content--date {
     font-size: 14px;
   }
 
-  .card__content-title {
+  .card__content--title {
     font-size: 24px;
   }
 
-  .card__content-description {
+  .card__content--description {
     font-size: 16px;
   }
 }
