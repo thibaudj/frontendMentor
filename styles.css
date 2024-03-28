@@ -51,11 +51,17 @@ main {
   gap: 1rem;
   justify-content: center;
   outline: 1px solid black;
+  overflow: hidden;
 }
 
 .project-list__item--cover {
   width: 100%;
   border-radius: 1rem;
+  transition: transform 0.1s;
+}
+
+.project-list__item--cover:hover {
+  transform: scale(2) translate(0, 5px);
 }
 
 .project-list__item--title {
