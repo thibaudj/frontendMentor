@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github branch](https://github.com/thibaudj/frontendMentor/tree/blog-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repository](https://github.com/thibaudj/frontendMentor/tree/blog-preview-card)
+- Live Site URL: [Github Pages](https://thibaudj.github.io/frontendMentor/)
 
 ## My process
 
